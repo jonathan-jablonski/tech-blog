@@ -29,6 +29,8 @@ Post.init(
   },
   {
     sequelize,
+    modelName: 'post',
+    freezeTableName: true,
   }
 );
 
