@@ -10,8 +10,7 @@ router.get('/', async (req, res) => {
         {
           model: User,
           Post,
-          limit: 1,
-          attributes: ['username', 'body'],
+          attributes: ['username'],
         },
       ],
       attributes: {
@@ -40,7 +39,7 @@ router.get('/post/:id', async (req, res) => {
           model: User,
           Post,
           Comment,
-          attributes: ['username', 'body'],
+          attributes: ['username'],
         },
       ],
     });
