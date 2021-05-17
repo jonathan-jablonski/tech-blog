@@ -11,25 +11,25 @@
 
 <body class="flex-column min-100-vh">
   <nav class="navbar">
-    <ul>
+    <ul class="flex-row">
       <li class="li-inline nav-item"><a href="/">Home</a></li>
-      <li class="li-inline nav-item"><a href="/blogs">Your Posts</a></li>
-      <li class="li-inline nav-item"><a href="/login">Login</a></li>
+      <li class="li-inline nav-item"><a href="/blogs">Blogs</a></li>
       <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li>
     </ul>
   </nav>
   <header class="hero">
-    <h1 class="app-title"><a href="/">The Tech Times</a></h1>
+    <h1 class="app-title"><a href="/blogs">Your Posts</a></h1>
   </header>
 
   <main class="col-auto">
     {{{body}}}
   </main>
 
-  <footer class="flex-row justify-center">
-    &copy; The Tech Times
+  <footer class="footer flex-row justify-center">
+    <a href="/blogs/new">➕ New Post</a>
   </footer>
 </body>
 
-</html>
 <script src="/js/logout.js"></script>
+
+</html>
