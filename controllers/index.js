@@ -5,6 +5,6 @@ const blogRoutes = require('./blog-routes');
 
 router.use('/api', apiRoutes);
 router.use('/', adminRoutes);
-router.use('/api/posts', blogRoutes);
+router.use('/blog', blogRoutes);
 
 module.exports = router;
