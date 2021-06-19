@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const session = require('express-session');
 const { Post, Comment, User } = require('../models/');
 
 // get all posts for homepage
@@ -45,6 +46,11 @@ router.get('/post/:id', async (req, res) => {
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/');
+    req.session.save((err) => {
+      if (err) {
+        return err;
+      }
+    });
     return;
   }
 
